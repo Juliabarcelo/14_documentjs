@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;   
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        ul li{
+            display: flex;
+            list-style-type: none;
+            width: 400px;
+            background-color: aqua;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        ul li img{
+            object-fit: cover;
+            height: 400px;
+            object-position: center;
+        }
+        ul li a{
+            border: 2px solid black;
+            text-decoration: none;
+            background-color: antiquewhite;
+            height: 60px;
+            width: 100%;
+            padding: 10px;
+            font-size: 2em;
+            padding: 10px;
+            color: blueviolet;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="interaction.js"></script>
+  <!--<script type="text/javascript"> 
+      $(document).ready(function(){
+        $("img").hide();
+        $("li:first-child a").click(function(){
+        $("li:first-child img"). fadeIn();    
+        }); 
+          
+      });
+ </script>-->
+</head>
+<body>
+    <ul>
+        <li><a href="#">primer</a>
+        <img src="img/animales.gif" alt="">
+        </li>
+         <li><a href="#">segon</a>
+        <img src="img/leon.gif" alt="">   
+        </li>
+         <li><a href="#">tercer</a>
+        <img src="img/animales.gif" alt="">   
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document_js</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("img").hide();
+        $("h1").click(function(){
+            $("#rino").show(3000);        
+        });
+       
+        $("h2").click(function(){
+            $("#rino").hide();     
+            $("#leon").show(3000);
+        });
+    });
+    
+    </script>
+    
+   
+    
+    
+</head>
+<body>
+  <h1>Rinoceronte</h1> 
+  <img id="rino" src="animales.gif" alt="rinoceronte"> 
+  <h2>León</h2>
+  <img id="leon" src="leon.gif" alt="leon">
+</body>
+</html>
